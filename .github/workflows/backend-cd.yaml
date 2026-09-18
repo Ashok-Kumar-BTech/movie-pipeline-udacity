@@ -82,7 +82,7 @@ jobs:
           outputs: type=docker,dest=/tmp/backend-image.tar
 
       - name: Upload Docker image
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: backend-docker-image
           path: /tmp/backend-image.tar
